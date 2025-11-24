@@ -66,7 +66,7 @@ vpdn search-order domain
 !vpdn-group LAC
 ! request-dialin
 !  protocol l2tp
-!  domain rmplc.co.uk
+!  domain testdomain
 ! initiate-to ip 10.104.0.253
 ! local name BRAS
 ! l2tp tunnel password 0 changeme
