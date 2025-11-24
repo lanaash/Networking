@@ -17,7 +17,7 @@ aaa authorization network default group radius local
 !
 vpdn enable
 !
-vpdn-group FD
+vpdn-group LNS
  accept-dialin
   protocol l2tp
   virtual-template 1
@@ -54,20 +54,20 @@ vpdn search-order domain
 !
 !----------------------------------------------------------------
 !
-! 5678adsl@rmplc.co.uk  Cleartext-Password := "adsl"
+! testuser@testdomain  Cleartext-Password := "adsl"
 !         Service-Type = Outbound-User,
 !         Tunnel-Client-Auth-Id:1 = "BRAS",
 !         Tunnel-Type:1 = L2TP,
 !         Cisco-AVPair = "vpdn:l2tp-tunnel-password=changeme",
-!         Tunnel-Server-Endpoint:1 = "10.104.3.254",
+!         Tunnel-Server-Endpoint:1 = "10.104.0.253",
 !         Tunnel-Preference:1 = 10
 !----------------------------------------------------------------
 !
-!vpdn-group RM
+!vpdn-group LAC
 ! request-dialin
 !  protocol l2tp
 !  domain rmplc.co.uk
-! initiate-to ip 10.104.3.254
+! initiate-to ip 10.104.0.253
 ! local name BRAS
 ! l2tp tunnel password 0 changeme
 !
@@ -109,7 +109,7 @@ interface Dialer0
  dialer pool 1
  dialer-group 1
  ppp authentication chap callin
- ppp chap hostname 5678adsl@rmplc.co.uk
+ ppp chap hostname testuser@testdomain
  ppp chap password 7 1416161800
 !
 ip route 0.0.0.0 0.0.0.0 Dialer0
