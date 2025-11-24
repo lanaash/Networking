@@ -55,7 +55,7 @@ vpdn search-order domain
 !----------------------------------------------------------------
 !
 ! testuser@testdomain  Cleartext-Password := "adsl"
-!         Service-Type = Outbound-User,
+!         Service-Type = PPP,
 !         Tunnel-Client-Auth-Id:1 = "BRAS",
 !         Tunnel-Type:1 = L2TP,
 !         Cisco-AVPair = "vpdn:l2tp-tunnel-password=changeme",
