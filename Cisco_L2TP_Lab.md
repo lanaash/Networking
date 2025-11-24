@@ -1,4 +1,4 @@
-# Basic Cisco LAC and LNS config ###
+# Basic Cisco LNA, LAC and CPE config
 
 
 * LAC terminates PPPoE from CPE
