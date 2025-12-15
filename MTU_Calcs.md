@@ -31,4 +31,4 @@ Linux requires the size of the ICMP data e.g. to test 1500 byte MTU
 ping x.x.x.x -M do -s 1472
 ```
 
-Routers often use the "size" option to be how many bytes is the IP packet to send (i.e. it does the overhead calcs for you)
+Routers often use the "size" option to be specify the size (bytes) of the IP packet to send (i.e. it does the overhead calcs for you so size may be 1500  in some cases)
