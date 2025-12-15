@@ -11,14 +11,19 @@
 | IPSec      | 52    |
 | L2TP       | 12    |     
 | PPP        | 10    |
+| MPLS       | 4     |
+| VLAN       | 4     |
 | Ethernet   | 14    |
 
 ## Common IP MTU
 
-| Network  | MTU  |
-|--------- | ---- |
-| Internet | 1500 |
-| L2TP     | 1450 |
+| Network               | MTU  |
+|---------------------- | ---- |
+| Internet              | 1500 |
+| L2TP over Internet    | 1450 |
+| PPPoE                 | 1492 |
+
+Provider networks should operate with a higher MTU and support Jumbo frames so customers can rely upon a minimum 1500 bytes MTU
 
 ## TCP MSS
 IP MTU - 40 bytes
