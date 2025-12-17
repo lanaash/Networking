@@ -1,3 +1,9 @@
+## Ping sweep
+```
+fping -a<ips.txt
+fping -ag 192.168.0.0/24
+```
+
 ## Packet loss hunting across the network
 
 Put your test IPs in ips.txt
